@@ -19,8 +19,6 @@ export default function Register() {
     const handleRegister = async (e) => {
         e.preventDefault();
 
-        setMessage("");
-
         const formData = new FormData()
 
         formData.append('email', email)
@@ -110,9 +108,9 @@ export default function Register() {
                     className="w-full mt-1 p-2 border rounded"
                 />
                 <input type="text" name='isAdmin' value={isAdmin} onChange={e => setIsAdmin(e.target.value)} />
-                <Button type='submit'>Submit</Button>
+                <input type='submit'>Submit</input>
             </form>
-            <Button 
+            <Button 1
                 variant="outlined" // Or "contained", "text"
                 startIcon={<ArrowBackIcon />} 
                 onClick={handleBackClick}
@@ -122,3 +120,4 @@ export default function Register() {
         </div>
     )
 }
+
