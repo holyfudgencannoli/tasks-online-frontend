@@ -108,7 +108,7 @@ export default function Register() {
                     className="w-full mt-1 p-2 border rounded"
                 />
                 <input type="text" name='isAdmin' value={isAdmin} onChange={e => setIsAdmin(e.target.value)} />
-                <input type='submit'>Submit</input>
+                <input value={"Submit"} type='submit' />
             </form>
             <Button
                 variant="outlined" // Or "contained", "text"
@@ -120,5 +120,6 @@ export default function Register() {
         </div>
     )
 }
+
 
 
