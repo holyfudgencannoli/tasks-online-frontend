@@ -110,7 +110,7 @@ export default function Register() {
                 <input type="text" name='isAdmin' value={isAdmin} onChange={e => setIsAdmin(e.target.value)} />
                 <input type='submit'>Submit</input>
             </form>
-            <Button 1
+            <Button
                 variant="outlined" // Or "contained", "text"
                 startIcon={<ArrowBackIcon />} 
                 onClick={handleBackClick}
@@ -120,4 +120,5 @@ export default function Register() {
         </div>
     )
 }
+
 
